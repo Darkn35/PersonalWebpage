@@ -1,0 +1,102 @@
+body {
+    font-family: Montserrat;
+    color: black;
+    margin: 0;
+    padding: 0;
+    font-size: 20;
+    scroll-behavior: smooth;
+  }
+
+.parallax { 
+    /* The image used */
+    background-image: url("../img/parallax_img.jfif");
+  
+    /* Set a specific height */
+    height: 500px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.parallax ul {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+
+.center_image {
+    border-radius: 50%;
+    height: 350px;
+    border: 3px solid black;
+  }
+
+.parallax-break {
+    background-image: url("../img/food-parallax.jpg");
+  
+    /* Set a specific height */
+    height: 225px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navigation-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #F2E3BA;
+    width: 100%;
+    top: 0;
+  }
+
+.navigation-bar li {
+    float: left;
+  }
+  
+.navigation-bar li a {
+    font-size: 18; 
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 24px 13px;
+    text-decoration: none;
+  }
+
+  /* Change the link color to #111 (black) on hover */
+
+.navigation-bar li a:hover {
+    background-color: #F3F4F6;
+  }
+
+  .link-title {
+    background-color: white;
+    border: 3px solid black;
+  }
+
+  h3 {
+      text-align: center;
+      color: black;
+  }
+  
+  p {
+    text-indent: 40px;
+    font-size:20;
+  }
+
+  footer {
+    background-color: #F2E3BA;
+    width: 100%;
+  }
+  
+  .footer-p {
+    text-indent: 40px;
+    font-size:10;
+  }

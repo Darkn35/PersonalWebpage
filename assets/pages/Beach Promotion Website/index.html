@@ -1,0 +1,131 @@
+<html>
+    <head>
+        <title>Beach Promotion</title>
+    </head>
+    <style type="text/css">
+    
+    body {
+        font-family: "Times New Roman, Georgia, Serif";
+        background-image: linear-gradient(#FAEEEE 1%, #FAE2C1 55%,#DEA568);
+        }
+    h1 {
+        font-family: "Playfair Display";
+        letter-spacing: 3px;
+    }
+    h2,h3,h4,h5,h6 {
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+    }
+    p {
+    font-family: "Times New Roman, Georgia, Serif";
+    font-size:larger;    
+    }
+    #loginForm {
+        display: none;
+    }
+    #signinForm {
+        display: none;
+    }
+    </style>
+    <body>
+        <center>
+            <h1>Boracay Beach</h1>
+            <br>
+            <hr>
+        </center>
+        <br>
+        <table frame="void" bgcolor="transparent" width="1305" cellpadding="10" cellspacing="10">
+           <tr colspan="2">
+                <td>
+                    <img src="Images\boracay.jpg" width="650">
+                    <h6>Photo by Laurentiu Morariu on Unsplash</h6>
+                    <button id= "loginbutton" onclick="openForm_l()">Log in</button>
+                    <button id= "signinbutton" onclick="openForm_s()">Sign in</button>
+                </td>
+                <td align="left" valign="top">
+                    <p>For those who love to get naturally tanned and just want to spend the day basking in warm sunshine,
+                         Boracay Beaches have the perfect places for you.
+                          This island is acknowledged to be one of the most beautiful venues for anything to do with sun, sand and water.
+                           Both Yahoo Travel and the BMW Tropical Beach Handbook publication call it a must-see beach for the planet.
+                            Every year, hundreds of thousands of visitors, both foreign and local come to the island.
+                             A few have even decided to buy property and put up businesses and stay for life.</p>
+
+                    <p>The island is famous for its azure clear, crystalline waters and powdery white, sandy beaches and hundreds of things to do.
+                         Boracay island and in particular, Boracay Beaches has countless activities and festivities happening all at the same time.
+                          Guests can try all sorts of water sports from sailing, wind surfing, scuba, cliff jumping, island hopping and even para-sailing just to name a few.
+                           Inland activities include island trekking, riding horseback, bicycling, seeing the tourist attractions and the like.
+                            There’s even a 72-par golf course on the island. Anything and everything can be done on Boracay Beaches.</p>
+                    
+                    <a href="http://boracaylive.com/boracay-beaches/"><h6>-Boracay Live</h6></a>
+                        
+                    <p>
+                        The Boracay Beaches are clean as the Government wanted to keep the beaches clean in order to maximize the happiness of the tourists.
+                    </p>
+                </td>
+           </tr>
+        </table>
+        <hr>
+        <div class="log_in">
+            <table frame="void" bgcolor="transparent" width="1305" cellpadding="10" cellspacing="10">
+                <tr rowspan="3">
+                    <td width="450"></td>
+                    <td align="left">
+                        <form id="loginForm">
+                            <h3>Name</h3>
+                            <input type="text" name="Name" size="30" value="Name">
+                            <h3>Password</h3>
+                            <input type="password" name="Password" size="30">
+                            <br>
+                            <br>
+                            <input type="submit" name="Submit" value="Submit"> 
+                            <input type="reset" name="Reset" value="Reset">
+                            <button id= "exit_l" onclick="closeForm_l()">Exit</button>
+                        </form>
+                    </td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <div class="sign_in">
+            <table frame="void" bgcolor="transparent" width="1305" cellpadding="10" cellspacing="10">
+                <tr rowspan="3">
+                    <td width="450"></td>
+                    <td align="left">
+                        <form id="signinForm">
+                            <h3>Name</h3>
+                            <input type="text" name="Name" size="30" value="Name">
+                            <h3>E-mail</h3>
+                            <input type="text" name="E-mail" size="30" value="E-mail">
+                            <h3>Password</h3>
+                            <input type="password" name="Password" size="30">
+                            <h3>Confirm Password</h3>
+                            <input type="password" name="Confirm password" size="30">
+                            <br>
+                            <br>
+                            <input type="submit" name="Submit" value="Submit">
+                            <input type="reset" name="Reset" value="Reset">
+                            <button id= "exit_s" onclick="closeForm_s()">Exit</button>
+                        </form>
+                    </td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <script type="text/javascript">
+            function openForm_l() {
+            document.getElementById("loginForm").style.display = "block";
+            document.getElementById("signinForm").style.display = "none";
+            }
+            function closeForm_l() {
+            document.getElementById("loginForm").style.display = "none";
+            }
+            function openForm_s() {
+            document.getElementById("signinForm").style.display = "block";
+            document.getElementById("loginForm").style.display = "none";
+            }
+            function closeForm_s() {
+            document.getElementById("signinForm").style.display = "none";
+            }
+        </script>
+    </body>
+</html>

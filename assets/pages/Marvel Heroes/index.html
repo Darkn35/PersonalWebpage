@@ -1,0 +1,177 @@
+<html>
+
+<head>
+    <title>Marvel Heroes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        function openForm_l() {
+            document.getElementById("loginForm").style.display = "block";
+            document.getElementById("signinForm").style.display = "none";
+        }
+        function closeForm_l() {
+            document.getElementById("loginForm").style.display = "none";
+        }
+        function openForm_s() {
+            document.getElementById("signinForm").style.display = "block";
+            document.getElementById("loginForm").style.display = "none";
+        }
+        function closeForm_s() {
+            document.getElementById("signinForm").style.display = "none";
+        }
+
+        $(function () {
+            $("#btnSubmit").click(function () {
+                var password = $("#password").val();
+                var confirmPassword = $("#confirm_password").val();
+
+                if (password != confirmPassword) {
+                    alert("Passwords do not match.");
+                    return false;
+                }
+                return true;
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="navbar-fixed-top">
+        <a href="#home"><img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/MarvelLogo.svg/800px-MarvelLogo.svg.png"
+                width="130">
+        </a>
+    </div>
+    <br>
+    <br>
+    <div class="container" id="home">
+        <div class="page-header">
+            <h1 class="display-4">&nbsp;Spiderman</h1>
+            <hr color="#666666">
+            <br>
+            <dd><i>&nbsp;&nbsp;&nbsp;“With great power comes great responsibility.” -Spiderman</i></dd>
+            <br>
+            <div class="container-fluid">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <dd>Spider-Man is the alias of Peter Parker, an orphan raised by his Aunt May and Uncle
+                                    Ben in New York City after his parents Richard and Mary Parker were killed in a
+                                    plane crash.
+                                    A bite from a radioactive spider triggers mutations in Peter Parker's body, granting
+                                    him superpowers.
+                                    <br>
+                                    <hr color=#666666>
+                                    <b>Appearance</b>
+                                    <br>
+                                    <br>
+                                    Height: 5 Feet 10 Inches <br>
+                                    Weight: 167 lbs. <br>
+                                    Gender: Male <br>
+                                    Eyes: Hazel <br>
+                                    Hair: Brown <br>
+                                    <br>
+                                    <hr color=#666666>
+                                    <b>Place of Origin</b> <br> <br>
+                                    Queens, New York City, New York<br>
+                                    <br>
+                                    <hr color=#666666>
+                                    <b>Powers</b><br><br>
+                                    Spider Physiology <br>
+                                    Wall-Crawling <br>
+                                    Mark of Kaine <br>
+                                    Superhuman Strength <br>
+                                    Superhuman Speed <br>
+                                    Superhuman Stamina <br>
+                                    Superhuman Durability <br>
+                                    Superhuman Agility <br>
+                                    Regenerative Healing Factor<br>
+                                    Enhanced Immune System<br>
+                                    Superhuman Equilibrium<br>
+                                    Superhuman Reflexes<br>
+                                    Spider-Sense<br>
+                                </dd>
+                            </td>
+                            <td><img src="assets/img/bg2.jpg" width="400" height="580"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <dd>
+                                    <b>Please leave a comment!</b>
+                                    <br>
+                                    <br>
+                                    <button class="btn btn-light btn btn-primary btn-sm" type="submit" id="loginbutton"
+                                        onclick="openForm_l()">Log in</button>
+                                    <button class="btn btn-light btn btn-primary btn-sm" type="submit" id="signinbutton"
+                                        onclick="openForm_s()">Sign in</button>
+                                    <br>
+                                    <form id="signinForm">
+                                        <br>
+                                        <h1 class="display-6">&nbsp;Sign in!</h1>
+                                        <br>
+                                        <div class="row">
+                                            <div class="col">
+                                                <input type="text" class="form-control" placeholder="Username"
+                                                    id="username" required />
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="row">
+                                            <div class="col">
+                                                <input type="password" class="form-control" placeholder="Password"
+                                                    id="password" required />
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="row">
+                                            <div class="col">
+                                                <input type="password" class="form-control"
+                                                    placeholder="Confirm Password" id="confirm_password" required />
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <br>
+                                        <input class="btn btn-light btn btn-primary btn-sm" type="button" id="btnSubmit"
+                                            value="Submit" onclick="closeForm_s()">
+                                    </form>
+                                    <form id="loginForm">
+                                        <br>
+                                        <h1 class="display-6">&nbsp;Log in!</h1>
+                                        <br>
+                                        <div class="row">
+                                            <div class="col">
+                                                <input type="text" id="username_l" required class="form-control"
+                                                    placeholder="Username">
+                                            </div>
+                                            <div class="col">
+                                                <input type="password" required class="form-control"
+                                                    placeholder="Password">
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="row">
+                                            <div class="col">
+                                                <textarea name="comment" type="text" class="form-control" rows="10"
+                                                    tabindex="4" placeholder="Comment"></textarea>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <br>
+                                        <input class="btn btn-light btn btn-primary btn-sm" type="submit" type="submit"
+                                            name="Submit" value="Submit">
+                                    </form>
+                                </dd>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

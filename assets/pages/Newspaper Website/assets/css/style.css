@@ -1,0 +1,29 @@
+body {
+    font-family: Montserrat;
+    color: black;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right,#015249,#A5A5AF);
+    font-size: 20;
+    scroll-behavior: smooth;
+  }
+
+.advertisement {
+  background-color: white;
+}
+
+h5 {
+  text-align: center;
+}
+
+.abscbn-pic {
+  vertical-align: middle;
+}
+
+p {
+  text-align: justify;
+}
+
+.space {
+  color: transparent;
+}
